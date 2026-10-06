@@ -32,7 +32,7 @@ Ingestion emits one chunk per clause, carrying all document fields plus:
 |---|---|
 | `clause_id` | Number as written, e.g. `7.2` |
 | `clause_title` | Heading text |
-| `clause_type` | One of: `parties_premises`, `term_commencement`, `rent_payment`, `rent_review`, `service_charge`, `security_deposit`, `break_option`, `renewal_option`, `assignment_subletting`, `permitted_use`, `fit_out_reinstatement`, `repair`, `insurance`, `exclusivity`, `termination`, `general` |
+| `clause_type` | One of: `parties_premises`, `term_commencement`, `rent_payment`, `rent_review`, `service_charge`, `security_deposit`, `break_option`, `renewal_option`, `assignment_subletting`, `permitted_use`, `fit_out_reinstatement`, `repair`, `insurance`, `exclusivity`, `termination`, `landlord_sale`, `purchase_right`, `turnover_reporting`, `general` |
 | `modifies_clause_ids` | Amendments / side letters only: which clauses of the `amends` doc this clause changes. Feeds the MVP 4 precedence graph |
 
 Citation format derived from these fields: `[Tenant · Title · Cl. clause_id]`.

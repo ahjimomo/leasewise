@@ -41,6 +41,9 @@ class ClauseType(StrEnum):
     INSURANCE = "insurance"
     EXCLUSIVITY = "exclusivity"
     TERMINATION = "termination"
+    LANDLORD_SALE = "landlord_sale"  # sale of the property, estoppel, deposit transfer
+    PURCHASE_RIGHT = "purchase_right"  # tenant ROFR / option to purchase
+    TURNOVER_REPORTING = "turnover_reporting"  # GTO statements, audit rights
     GENERAL = "general"  # boilerplate: notices, governing law, definitions, etc.
 
 
