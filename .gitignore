@@ -1,0 +1,25 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+.pytest_cache/
+.ruff_cache/
+*.egg-info/
+
+# Secrets
+.env
+.streamlit/secrets.toml
+
+# Build artefacts (index is rebuilt by src/ingest.py)
+index/
+*.pkl
+chroma/
+
+# Local logs / feedback
+logs/
+*.log
+
+# OS / editor
+.DS_Store
+.vscode/
+.idea/

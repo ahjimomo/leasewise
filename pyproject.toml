@@ -1,0 +1,29 @@
+[project]
+name = "leasewise"
+version = "0.1.0"
+description = "AI lease portfolio assistant for CRES teams, with clause-level citations (synthetic data, not legal advice)."
+readme = "README.md"
+requires-python = ">=3.12,<3.13"
+dependencies = [
+    "streamlit>=1.40",
+    "openai>=1.50",
+    "scikit-learn>=1.5",
+    "numpy>=1.26",
+    "pydantic>=2.8",
+    "python-frontmatter>=1.1",
+    "python-dotenv>=1.0",
+]
+
+[dependency-groups]
+dev = [
+    "pytest>=8.0",
+    "ruff>=0.6",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
+
+[tool.ruff]
+line-length = 100
+target-version = "py312"
