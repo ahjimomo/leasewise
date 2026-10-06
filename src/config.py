@@ -1,6 +1,7 @@
 """Central configuration. Secrets come from .env locally or Streamlit secrets when deployed."""
 
 import os
+from datetime import date
 from pathlib import Path
 
 from dotenv import load_dotenv
@@ -13,7 +14,9 @@ INDEX_DIR = ROOT / "index"
 EVAL_DIR = ROOT / "eval"
 
 LANDLORD_NAME = "Atlas Bay Properties"
-DISCLAIMER = "All properties, tenants, and leases are fictional. This is a demo, not legal advice."
+# Fixed "today" for the synthetic portfolio, so date-relative answers and the golden set stay stable.
+AS_OF_DATE = date(2026, 10, 1)
+DISCLAIMER ="All properties, tenants, and leases are fictional. This is a demo, not legal advice."
 
 # LLM (OpenRouter). Default model is chosen from the current free list at build time.
 OPENROUTER_BASE_URL = "https://openrouter.ai/api/v1"
