@@ -25,7 +25,15 @@ Each source document is one markdown file in `data/leases/` with YAML front matt
 
 ## Clause (chunk)
 
-Clauses are numbered markdown headings (`## 7. Rent Review`, `### 7.2 Market Review`).
+Clauses are level-2 markdown headings with a number, a title, and an attribute tag:
+
+```markdown
+## 7. Break Option {type=break_option}
+## 2. Deletion of Break Option {type=break_option modifies=7}
+```
+
+`type` is required. `modifies` (amendments and side letters only) is a comma-separated list of clause ids
+in the `amends` document. Sub-clauses (7.1, 7.2) are numbered paragraphs inside the clause. Parser: [`src/corpus.py`](../src/corpus.py).
 Ingestion emits one chunk per clause, carrying all document fields plus:
 
 | Field | Notes |

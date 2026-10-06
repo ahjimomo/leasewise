@@ -49,6 +49,8 @@ Rent = base rent, S$ psf/month, excl. GST. ⚑ = planted hard case (see map belo
 | Brief §4 hard case | Where it's planted | Question type |
 |---|---|---|
 | Amendment changes rent | T11-A1 (temporary cut), T02-A1, T04-A1 | Q3 |
+| Current figure only in a recital | T02-A1 recites the 2025 rent review (S$11.30) that no lease clause states | Q3 |
+| Side-letter consent has lapsed | T05-SL1 sublet consent ran 2025-10-01 → 2026-09-30, so it has expired at the as-of date | Q2, Q3 |
 | Amendment extends term | T02-A1 (moves out of the 2027 expiry set) | Q3, Q5 |
 | Amendment removes break option | T01-A1 (trap for "breaks in next 18 months") | Q3, Q4 |
 | Side letter waives a clause for a limited period | T10-SL1, T19-SL1, T05-SL1 | Q2, Q3 |
