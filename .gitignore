@@ -23,3 +23,6 @@ logs/
 .DS_Store
 .vscode/
 .idea/
+
+# Private working notes (not published)
+private/

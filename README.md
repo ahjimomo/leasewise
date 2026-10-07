@@ -4,7 +4,7 @@ AI assistant for Commercial Real Estate Services (CRES) teams that answers quest
 
 > **All properties, tenants, and leases are fictional. This is a demo, not legal advice.**
 
-**Status:** MVP 1 in progress. Full brief: [docs/cres-lease-portfolio-assistant-brief.md](docs/cres-lease-portfolio-assistant-brief.md) · Data contract: [docs/schema.md](docs/schema.md)
+**Status:** MVP 1 in progress. Data contract: [docs/schema.md](docs/schema.md)
 
 ## Quick start
 
