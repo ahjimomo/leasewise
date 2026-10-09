@@ -1,6 +1,6 @@
 # Portfolio Outline — Atlas Bay Properties (fictional)
 
-Blueprint for the synthetic corpus. Review this before full documents are written.
+Blueprint for the synthetic corpus in `data/leases/` (all 29 documents written; this file is kept in sync).
 
 **As-of date:** `2026-10-01`. All relative questions ("next 18 months", "current rent") are evaluated
 against this fixed date so the golden set stays stable over time. Configured as `AS_OF_DATE`.
@@ -36,7 +36,7 @@ Rent = base rent, S$ psf/month, excl. GST. ⚑ = planted hard case (see map belo
 | T11 | Golden Ladle Noodle House Pte Ltd | P2 · #B1-22 | F&B | 900 | 30.00 | 2023-12-01 → 2026-11-30 | Signed **before** the retail leases Act (no Code clause) | **A1** (2025-06-01): rent cut to 26.00 for 12 months ⚑ |
 | T12 | Urban Stride Footwear Pte Ltd | P2 · #01-20 | Retail | 1,300 | 20.00 | 2024-09-01 → 2027-08-31 | **No** break, **no** exclusivity, **no** renewal ⚑ | – |
 | T13 | Larchmere Logistics (S) Pte Ltd | P3 · #01-01–04 | Warehouse | 42,000 | 1.85 | 2023-01-01 → 2027-12-31 | **CPI-linked** annual review (floor 0%, cap 5%) ⚑; name similar to T01 ⚑; **right of first refusal** to buy the building ⚑ | – |
-| T14 | Halvorne Precision Engineering Pte Ltd | P3 · #02-05 | Light industrial | 9,600 | 2.10 | 2024-07-01 → 2027-06-30, +3 renewal | Tenant break effective 2027-01-01 on 6 mo notice; heavy reinstatement | – |
+| T14 | Halvorne Precision Engineering Pte Ltd | P3 · #02-05 | Light industrial | 9,600 | 2.10 | 2024-07-01 → 2029-06-30, +3 renewal | Tenant break effective 2027-07-01 on 6 mo notice (window still open at as-of date); heavy reinstatement | – |
 | T15 | Polarvale Cold Storage Pte Ltd | P3 · #01-08 | Cold storage | 15,000 | 2.20 | 2025-03-01 → 2028-02-29 | – | **A1** (2026-02-01): +3,000 sq ft, new rent from 2026-04-01; **A2** (2026-03-15): amends A1, pushes date to 2026-06-01 ⚑ |
 | T16 | Tidewater Packaging Pte Ltd | P3 · #03-02 | Light industrial | 5,200 | 1.95 | 2025-11-01 → 2027-10-31 | Short and simple; no renewal | – |
 | T17 | Tembusu Brew Pte Ltd | P4 · #01-02 | F&B | 950 | 26.00 or 8% GTO | 2025-02-01 → 2028-01-31, +3 renewal | Wording near-identical to T07 ⚑ | – |
@@ -56,7 +56,10 @@ Rent = base rent, S$ psf/month, excl. GST. ⚑ = planted hard case (see map belo
 | Side letter waives a clause for a limited period | T10-SL1, T19-SL1, T05-SL1 | Q2, Q3 |
 | Amendment chain (A2 amends A1) | T15-A1 → T15-A2 | Q3 (MVP 4 graph) |
 | Sales-threshold break | T08 | Q1, Q4 |
-| Index-linked rent review | T13 | Q1 |
+| Index-linked rent review | T13: current rent depends on published CPI, which is not in the corpus, so the answer must explain the mechanism, not invent a figure | Q1, Q3 |
+| Temporary change already ended | T11-A1 rent cut ended 2026-05-31 (current rent back to S$30.00); T10-SL1 A&P waiver ended 2025-09-30 | Q3 |
+| Temporary change still running | T19-SL1 service charge frozen at S$1.10 until 2027-05-31 (lease alone implies ~S$1.133) | Q3 |
+| Step rent | T06 base rent stepped from S$9.50 to S$10.20 on 2025-01-01 | Q1, Q5 |
 | Missing clauses ("no such clause") | T03, T12 (also exclusivity absent everywhere except T06, T09) | Q6 |
 | Similar wording across tenants | T07 vs T17 (café leases) | Q2 |
 | Similar tenant names | T01 Larchmere Analytics vs T13 Larchmere Logistics | Q2 |
@@ -67,8 +70,8 @@ Rent = base rent, S$ psf/month, excl. GST. ⚑ = planted hard case (see map belo
 
 ## Quick sanity checks for Q4/Q5 (as of 2026-10-01)
 
-- **Break options in next 18 months (to 2028-03-31):** T14 (2027-01-01), T18 (2028-02-15), T08 (conditional on sales). **Not** T01: removed by A1.
-- **Leases expiring in 2027:** T03, T05, T06, T07, T08, T09, T12, T13, T14, T16, T20. **Not** T02: extended by A1.
+- **Break options in next 18 months (to 2028-03-31):** T14 (2027-07-01), T18 (2028-02-15), T08 (any time, conditional on sales < S$600k). **Not** T01: removed by A1.
+- **Leases expiring in 2027:** T03, T05, T06, T07, T08, T09, T12, T13, T16, T20. **Not** T02: extended by A1.
 
 ## Deferred (later iterations)
 
