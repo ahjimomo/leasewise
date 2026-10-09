@@ -1,0 +1,1206 @@
+{
+  "config": {
+    "method": "tfidf",
+    "k": 5,
+    "threshold": 0.1,
+    "mode": "retrieval"
+  },
+  "summary": {
+    "Q1": {
+      "n": 14,
+      "hit": [
+        0.21428571428571427,
+        0.0,
+        0.42857142857142855
+      ],
+      "recall": [
+        0.21428571428571427,
+        0.0,
+        0.42857142857142855
+      ],
+      "rr": [
+        0.06785714285714285,
+        0.0,
+        0.15357142857142858
+      ],
+      "tenant_acc": [
+        0.35714285714285715,
+        0.24285714285714288,
+        0.48571428571428577
+      ],
+      "false_abstain": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "Q2": {
+      "n": 8,
+      "hit": [
+        0.5,
+        0.125,
+        0.875
+      ],
+      "recall": [
+        0.5,
+        0.125,
+        0.875
+      ],
+      "rr": [
+        0.21875,
+        0.0625,
+        0.375
+      ],
+      "tenant_acc": [
+        0.45,
+        0.325,
+        0.6
+      ],
+      "false_abstain": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "Q3": {
+      "n": 13,
+      "hit": [
+        0.5384615384615384,
+        0.3076923076923077,
+        0.8461538461538461
+      ],
+      "recall": [
+        0.34615384615384615,
+        0.15384615384615385,
+        0.5384615384615384
+      ],
+      "rr": [
+        0.25256410256410255,
+        0.08974358974358974,
+        0.4641025641025641
+      ],
+      "tenant_acc": [
+        0.6615384615384615,
+        0.5230769230769231,
+        0.7846153846153846
+      ],
+      "false_abstain": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "Q4": {
+      "n": 7,
+      "hit": [
+        0.8571428571428571,
+        0.5714285714285714,
+        1.0
+      ],
+      "recall": [
+        0.6590909090909091,
+        0.37012987012987014,
+        0.8928571428571429
+      ],
+      "rr": [
+        0.75,
+        0.42857142857142855,
+        1.0
+      ],
+      "tenant_acc": [
+        0.6857142857142857,
+        0.4,
+        0.9142857142857143
+      ],
+      "false_abstain": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "Q5": {
+      "n": 5,
+      "hit": [
+        0.4,
+        0.0,
+        0.8
+      ],
+      "recall": [
+        0.26,
+        0.0,
+        0.66
+      ],
+      "rr": [
+        0.3,
+        0.0,
+        0.7
+      ],
+      "tenant_acc": [
+        0.8,
+        0.64,
+        0.96
+      ],
+      "false_abstain": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "Q6": {
+      "n": 8,
+      "abstain_correct": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "ALL": {
+      "n": 55,
+      "hit": [
+        0.46808510638297873,
+        0.3191489361702128,
+        0.6170212765957447
+      ],
+      "recall": [
+        0.3705029013539652,
+        0.24816247582205028,
+        0.5
+      ],
+      "rr": [
+        0.27092198581560284,
+        0.1698581560283688,
+        0.37836879432624115
+      ],
+      "tenant_acc": [
+        0.5531914893617021,
+        0.4723404255319149,
+        0.6382978723404256
+      ],
+      "abstain_correct": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "false_abstain": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "rows": [
+    {
+      "id": "q001",
+      "question_type": "Q1",
+      "answerable": true,
+      "retrieved": [
+        "ABP-L-016#1",
+        "ABP-L-013#0",
+        "ABP-L-015#1",
+        "ABP-L-014#1",
+        "ABP-L-013#1"
+      ],
+      "top_score": 0.3021,
+      "abstains": false,
+      "retrieval_ms": 0.45,
+      "hit": 0.0,
+      "recall": 0.0,
+      "rr": 0.0,
+      "tenant_acc": 0.4
+    },
+    {
+      "id": "q002",
+      "question_type": "Q1",
+      "answerable": true,
+      "retrieved": [
+        "ABP-L-009#0",
+        "ABP-L-016#5",
+        "ABP-L-014#5",
+        "ABP-L-015#5",
+        "ABP-L-019#5"
+      ],
+      "top_score": 0.4101,
+      "abstains": false,
+      "retrieval_ms": 0.3,
+      "hit": 0.0,
+      "recall": 0.0,
+      "rr": 0.0,
+      "tenant_acc": 0.2
+    },
+    {
+      "id": "q003",
+      "question_type": "Q1",
+      "answerable": true,
+      "retrieved": [
+        "ABP-L-008#0",
+        "ABP-L-001-A1#1",
+        "ABP-L-008#8",
+        "ABP-L-005#12",
+        "ABP-L-015#12"
+      ],
+      "top_score": 0.2977,
+      "abstains": false,
+      "retrieval_ms": 0.3,
+      "hit": 0.0,
+      "recall": 0.0,
+      "rr": 0.0,
+      "tenant_acc": 0.4
+    },
+    {
+      "id": "q004",
+      "question_type": "Q1",
+      "answerable": true,
+      "retrieved": [
+        "ABP-L-007#0",
+        "ABP-L-007#8",
+        "ABP-L-017#8",
+        "ABP-L-018#13",
+        "ABP-L-015#3"
+      ],
+      "top_score": 0.5293,
+      "abstains": false,
+      "retrieval_ms": 0.28,
+      "hit": 0.0,
+      "recall": 0.0,
+      "rr": 0.0,
+      "tenant_acc": 0.4
+    },
+    {
+      "id": "q005",
+      "question_type": "Q1",
+      "answerable": true,
+      "retrieved": [
+        "ABP-L-014#0",
+        "ABP-L-014#6",
+        "ABP-L-001#11",
+        "ABP-L-011#13",
+        "ABP-L-019-SL1#1"
+      ],
+      "top_score": 0.4901,
+      "abstains": false,
+      "retrieval_ms": 0.29,
+      "hit": 0.0,
+      "recall": 0.0,
+      "rr": 0.0,
+      "tenant_acc": 0.4
+    },
+    {
+      "id": "q006",
+      "question_type": "Q1",
+      "answerable": true,
+      "retrieved": [
+        "ABP-L-008#12",
+        "ABP-L-011#11",
+        "ABP-L-012#11",
+        "ABP-L-019#11",
+        "ABP-L-003#10"
+      ],
+      "top_score": 0.4012,
+      "abstains": false,
+      "retrieval_ms": 0.27,
+      "hit": 0.0,
+      "recall": 0.0,
+      "rr": 0.0,
+      "tenant_acc": 0.0
+    },
+    {
+      "id": "q007",
+      "question_type": "Q1",
+      "answerable": true,
+      "retrieved": [
+        "ABP-L-006#0",
+        "ABP-L-017#7",
+        "ABP-L-017#3",
+        "ABP-L-007#3",
+        "ABP-L-007#7"
+      ],
+      "top_score": 0.3192,
+      "abstains": false,
+      "retrieval_ms": 0.27,
+      "hit": 0.0,
+      "recall": 0.0,
+      "rr": 0.0,
+      "tenant_acc": 0.2
+    },
+    {
+      "id": "q008",
+      "question_type": "Q1",
+      "answerable": true,
+      "retrieved": [
+        "ABP-L-020#0",
+        "ABP-L-020#7",
+        "ABP-L-009#8",
+        "ABP-L-020#8",
+        "ABP-L-020#13"
+      ],
+      "top_score": 0.5176,
+      "abstains": false,
+      "retrieval_ms": 0.28,
+      "hit": 1.0,
+      "recall": 1.0,
+      "rr": 0.5,
+      "tenant_acc": 0.8
+    },
+    {
+      "id": "q009",
+      "question_type": "Q1",
+      "answerable": true,
+      "retrieved": [
+        "ABP-L-003#0",
+        "ABP-L-002-A1#2",
+        "ABP-L-013#12",
+        "ABP-L-006#5",
+        "ABP-L-010-SL1#1"
+      ],
+      "top_score": 0.3993,
+      "abstains": false,
+      "retrieval_ms": 0.27,
+      "hit": 0.0,
+      "recall": 0.0,
+      "rr": 0.0,
+      "tenant_acc": 0.2
+    },
+    {
+      "id": "q010",
+      "question_type": "Q1",
+      "answerable": true,
+      "retrieved": [
+        "ABP-L-006#0",
+        "ABP-L-007#4",
+        "ABP-L-017#4",
+        "ABP-L-006#4",
+        "ABP-L-008#4"
+      ],
+      "top_score": 0.3242,
+      "abstains": false,
+      "retrieval_ms": 0.26,
+      "hit": 1.0,
+      "recall": 1.0,
+      "rr": 0.25,
+      "tenant_acc": 0.4
+    },
+    {
+      "id": "q011",
+      "question_type": "Q1",
+      "answerable": true,
+      "retrieved": [
+        "ABP-L-016#1",
+        "ABP-L-013#0",
+        "ABP-L-015#1",
+        "ABP-L-014#1",
+        "ABP-L-013#1"
+      ],
+      "top_score": 0.2759,
+      "abstains": false,
+      "retrieval_ms": 0.27,
+      "hit": 0.0,
+      "recall": 0.0,
+      "rr": 0.0,
+      "tenant_acc": 0.4
+    },
+    {
+      "id": "q012",
+      "question_type": "Q1",
+      "answerable": true,
+      "retrieved": [
+        "ABP-L-001-A1#0",
+        "ABP-L-001#0",
+        "ABP-L-004#1",
+        "ABP-L-003#1",
+        "ABP-L-005#1"
+      ],
+      "top_score": 0.3346,
+      "abstains": false,
+      "retrieval_ms": 0.27,
+      "hit": 0.0,
+      "recall": 0.0,
+      "rr": 0.0,
+      "tenant_acc": 0.4
+    },
+    {
+      "id": "q013",
+      "question_type": "Q1",
+      "answerable": true,
+      "retrieved": [
+        "ABP-L-011#0",
+        "ABP-L-011-A1#0",
+        "ABP-L-011#7",
+        "ABP-L-015#8",
+        "ABP-L-011#13"
+      ],
+      "top_score": 0.5287,
+      "abstains": false,
+      "retrieval_ms": 0.27,
+      "hit": 1.0,
+      "recall": 1.0,
+      "rr": 0.2,
+      "tenant_acc": 0.8
+    },
+    {
+      "id": "q014",
+      "question_type": "Q1",
+      "answerable": true,
+      "retrieved": [
+        "ABP-L-010#14",
+        "ABP-L-012#14",
+        "ABP-L-020#14",
+        "ABP-L-007#16",
+        "ABP-L-008#16"
+      ],
+      "top_score": 0.3922,
+      "abstains": false,
+      "retrieval_ms": 0.27,
+      "hit": 0.0,
+      "recall": 0.0,
+      "rr": 0.0,
+      "tenant_acc": 0.0
+    },
+    {
+      "id": "q015",
+      "question_type": "Q2",
+      "answerable": true,
+      "retrieved": [
+        "ABP-L-017#0",
+        "ABP-L-017#1",
+        "ABP-L-007#1",
+        "ABP-L-017#8",
+        "ABP-L-001#1"
+      ],
+      "top_score": 0.2966,
+      "abstains": false,
+      "retrieval_ms": 0.27,
+      "hit": 1.0,
+      "recall": 1.0,
+      "rr": 0.5,
+      "tenant_acc": 0.6
+    },
+    {
+      "id": "q016",
+      "question_type": "Q2",
+      "answerable": true,
+      "retrieved": [
+        "ABP-L-017#0",
+        "ABP-L-017#8",
+        "ABP-L-017#7",
+        "ABP-L-017#3",
+        "ABP-L-007#3"
+      ],
+      "top_score": 0.3793,
+      "abstains": false,
+      "retrieval_ms": 0.26,
+      "hit": 1.0,
+      "recall": 1.0,
+      "rr": 0.25,
+      "tenant_acc": 0.8
+    },
+    {
+      "id": "q017",
+      "question_type": "Q2",
+      "answerable": true,
+      "retrieved": [
+        "ABP-L-007#0",
+        "ABP-L-007#8",
+        "ABP-L-017#8",
+        "ABP-L-016#11",
+        "ABP-L-014#13"
+      ],
+      "top_score": 0.4786,
+      "abstains": false,
+      "retrieval_ms": 0.25,
+      "hit": 1.0,
+      "recall": 1.0,
+      "rr": 0.5,
+      "tenant_acc": 0.4
+    },
+    {
+      "id": "q018",
+      "question_type": "Q2",
+      "answerable": true,
+      "retrieved": [
+        "ABP-L-001#0",
+        "ABP-L-001-A1#0",
+        "ABP-L-001#9",
+        "ABP-L-013#0",
+        "ABP-L-016#7"
+      ],
+      "top_score": 0.3939,
+      "abstains": false,
+      "retrieval_ms": 0.25,
+      "hit": 0.0,
+      "recall": 0.0,
+      "rr": 0.0,
+      "tenant_acc": 0.6
+    },
+    {
+      "id": "q019",
+      "question_type": "Q2",
+      "answerable": true,
+      "retrieved": [
+        "ABP-L-013#0",
+        "ABP-L-001#0",
+        "ABP-L-016#7",
+        "ABP-L-011#8",
+        "ABP-L-008#9"
+      ],
+      "top_score": 0.4121,
+      "abstains": false,
+      "retrieval_ms": 0.25,
+      "hit": 0.0,
+      "recall": 0.0,
+      "rr": 0.0,
+      "tenant_acc": 0.2
+    },
+    {
+      "id": "q020",
+      "question_type": "Q2",
+      "answerable": true,
+      "retrieved": [
+        "ABP-L-003#0",
+        "ABP-L-016#7",
+        "ABP-L-011#8",
+        "ABP-L-008#9",
+        "ABP-L-012#8"
+      ],
+      "top_score": 0.4295,
+      "abstains": false,
+      "retrieval_ms": 0.26,
+      "hit": 0.0,
+      "recall": 0.0,
+      "rr": 0.0,
+      "tenant_acc": 0.2
+    },
+    {
+      "id": "q021",
+      "question_type": "Q2",
+      "answerable": true,
+      "retrieved": [
+        "ABP-L-001#0",
+        "ABP-L-001-A1#0",
+        "ABP-L-019#5",
+        "ABP-L-009#6",
+        "ABP-L-011#6"
+      ],
+      "top_score": 0.3517,
+      "abstains": false,
+      "retrieval_ms": 0.26,
+      "hit": 0.0,
+      "recall": 0.0,
+      "rr": 0.0,
+      "tenant_acc": 0.4
+    },
+    {
+      "id": "q022",
+      "question_type": "Q2",
+      "answerable": true,
+      "retrieved": [
+        "ABP-L-009#0",
+        "ABP-L-009#9",
+        "ABP-L-004#7",
+        "ABP-L-020#8",
+        "ABP-L-019#7"
+      ],
+      "top_score": 0.4044,
+      "abstains": false,
+      "retrieval_ms": 0.26,
+      "hit": 1.0,
+      "recall": 1.0,
+      "rr": 0.5,
+      "tenant_acc": 0.4
+    },
+    {
+      "id": "q023",
+      "question_type": "Q3",
+      "answerable": true,
+      "retrieved": [
+        "ABP-L-005#0",
+        "ABP-L-005-SL1#0",
+        "ABP-L-005#7",
+        "ABP-L-005-SL1#1",
+        "ABP-L-016#7"
+      ],
+      "top_score": 0.3705,
+      "abstains": false,
+      "retrieval_ms": 0.26,
+      "hit": 1.0,
+      "recall": 0.5,
+      "rr": 0.25,
+      "tenant_acc": 0.8
+    },
+    {
+      "id": "q024",
+      "question_type": "Q3",
+      "answerable": true,
+      "retrieved": [
+        "ABP-L-001#0",
+        "ABP-L-001-A1#0",
+        "ABP-L-001-A1#2",
+        "ABP-L-018#8",
+        "ABP-L-014#7"
+      ],
+      "top_score": 0.3333,
+      "abstains": false,
+      "retrieval_ms": 0.26,
+      "hit": 1.0,
+      "recall": 0.5,
+      "rr": 0.3333333333333333,
+      "tenant_acc": 0.6
+    },
+    {
+      "id": "q025",
+      "question_type": "Q3",
+      "answerable": true,
+      "retrieved": [
+        "ABP-L-002#0",
+        "ABP-L-002-A1#0",
+        "ABP-L-002#7",
+        "ABP-L-002-A1#2",
+        "ABP-L-013#12"
+      ],
+      "top_score": 0.3418,
+      "abstains": false,
+      "retrieval_ms": 0.27,
+      "hit": 1.0,
+      "recall": 0.5,
+      "rr": 0.25,
+      "tenant_acc": 0.8
+    },
+    {
+      "id": "q026",
+      "question_type": "Q3",
+      "answerable": true,
+      "retrieved": [
+        "ABP-L-002#0",
+        "ABP-L-002-A1#0",
+        "ABP-L-002#7",
+        "ABP-L-018#8",
+        "ABP-L-011-A1#2"
+      ],
+      "top_score": 0.3676,
+      "abstains": false,
+      "retrieval_ms": 0.27,
+      "hit": 0.0,
+      "recall": 0.0,
+      "rr": 0.0,
+      "tenant_acc": 0.6
+    },
+    {
+      "id": "q027",
+      "question_type": "Q3",
+      "answerable": true,
+      "retrieved": [
+        "ABP-L-002-A1#4",
+        "ABP-L-002#0",
+        "ABP-L-002#7",
+        "ABP-L-002-A1#0",
+        "ABP-L-004-A1#1"
+      ],
+      "top_score": 0.3844,
+      "abstains": false,
+      "retrieval_ms": 0.26,
+      "hit": 1.0,
+      "recall": 1.0,
+      "rr": 1.0,
+      "tenant_acc": 0.8
+    },
+    {
+      "id": "q028",
+      "question_type": "Q3",
+      "answerable": true,
+      "retrieved": [
+        "ABP-L-004-A1#4",
+        "ABP-L-004#0",
+        "ABP-L-004#4",
+        "ABP-L-004-A1#0",
+        "ABP-L-014#4"
+      ],
+      "top_score": 0.3681,
+      "abstains": false,
+      "retrieval_ms": 0.27,
+      "hit": 1.0,
+      "recall": 1.0,
+      "rr": 1.0,
+      "tenant_acc": 0.8
+    },
+    {
+      "id": "q029",
+      "question_type": "Q3",
+      "answerable": true,
+      "retrieved": [
+        "ABP-L-004#0",
+        "ABP-L-004-A1#0",
+        "ABP-L-009#8",
+        "ABP-L-006#7",
+        "ABP-L-013#12"
+      ],
+      "top_score": 0.3832,
+      "abstains": false,
+      "retrieval_ms": 0.26,
+      "hit": 0.0,
+      "recall": 0.0,
+      "rr": 0.0,
+      "tenant_acc": 0.4
+    },
+    {
+      "id": "q030",
+      "question_type": "Q3",
+      "answerable": true,
+      "retrieved": [
+        "ABP-L-011#0",
+        "ABP-L-011-A1#0",
+        "ABP-L-011#7",
+        "ABP-L-018#8",
+        "ABP-L-011-A1#2"
+      ],
+      "top_score": 0.5669,
+      "abstains": false,
+      "retrieval_ms": 0.26,
+      "hit": 1.0,
+      "recall": 0.5,
+      "rr": 0.2,
+      "tenant_acc": 0.8
+    },
+    {
+      "id": "q031",
+      "question_type": "Q3",
+      "answerable": true,
+      "retrieved": [
+        "ABP-L-012#5",
+        "ABP-L-020#5",
+        "ABP-L-008#6",
+        "ABP-L-009#5",
+        "ABP-L-011#5"
+      ],
+      "top_score": 0.4294,
+      "abstains": false,
+      "retrieval_ms": 0.26,
+      "hit": 0.0,
+      "recall": 0.0,
+      "rr": 0.0,
+      "tenant_acc": 0.0
+    },
+    {
+      "id": "q032",
+      "question_type": "Q3",
+      "answerable": true,
+      "retrieved": [
+        "ABP-L-019#0",
+        "ABP-L-019-SL1#0",
+        "ABP-L-019#8",
+        "ABP-L-002#5",
+        "ABP-L-001#5"
+      ],
+      "top_score": 0.4502,
+      "abstains": false,
+      "retrieval_ms": 0.28,
+      "hit": 0.0,
+      "recall": 0.0,
+      "rr": 0.0,
+      "tenant_acc": 0.6
+    },
+    {
+      "id": "q033",
+      "question_type": "Q3",
+      "answerable": true,
+      "retrieved": [
+        "ABP-L-015#0",
+        "ABP-L-015-A1#0",
+        "ABP-L-015-A2#1",
+        "ABP-L-015-A2#0",
+        "ABP-L-015-A1#1"
+      ],
+      "top_score": 0.3208,
+      "abstains": false,
+      "retrieval_ms": 0.27,
+      "hit": 0.0,
+      "recall": 0.0,
+      "rr": 0.0,
+      "tenant_acc": 1.0
+    },
+    {
+      "id": "q034",
+      "question_type": "Q3",
+      "answerable": true,
+      "retrieved": [
+        "ABP-L-015#0",
+        "ABP-L-015-A1#0",
+        "ABP-L-015-A2#0",
+        "ABP-L-010#5",
+        "ABP-L-008#3"
+      ],
+      "top_score": 0.4355,
+      "abstains": false,
+      "retrieval_ms": 0.26,
+      "hit": 0.0,
+      "recall": 0.0,
+      "rr": 0.0,
+      "tenant_acc": 0.6
+    },
+    {
+      "id": "q035",
+      "question_type": "Q3",
+      "answerable": true,
+      "retrieved": [
+        "ABP-L-015#0",
+        "ABP-L-015-A1#0",
+        "ABP-L-015-A2#0",
+        "ABP-L-015-A1#4",
+        "ABP-L-016#5"
+      ],
+      "top_score": 0.406,
+      "abstains": false,
+      "retrieval_ms": 0.26,
+      "hit": 1.0,
+      "recall": 0.5,
+      "rr": 0.25,
+      "tenant_acc": 0.8
+    },
+    {
+      "id": "q036",
+      "question_type": "Q4",
+      "answerable": true,
+      "retrieved": [
+        "ABP-L-001-A1#2",
+        "ABP-L-018#8",
+        "ABP-L-014#7",
+        "ABP-L-001#7",
+        "ABP-L-001-A1#3"
+      ],
+      "top_score": 0.305,
+      "abstains": false,
+      "retrieval_ms": 0.28,
+      "hit": 1.0,
+      "recall": 0.75,
+      "rr": 1.0,
+      "tenant_acc": 1.0
+    },
+    {
+      "id": "q037",
+      "question_type": "Q4",
+      "answerable": true,
+      "retrieved": [
+        "ABP-L-006#1",
+        "ABP-L-009#13",
+        "ABP-L-006#15",
+        "ABP-L-009#8",
+        "ABP-L-006#8"
+      ],
+      "top_score": 0.1254,
+      "abstains": false,
+      "retrieval_ms": 0.26,
+      "hit": 1.0,
+      "recall": 1.0,
+      "rr": 0.25,
+      "tenant_acc": 1.0
+    },
+    {
+      "id": "q038",
+      "question_type": "Q4",
+      "answerable": true,
+      "retrieved": [
+        "ABP-L-002-A1#2",
+        "ABP-L-016#2",
+        "ABP-L-013#2",
+        "ABP-L-020#2",
+        "ABP-L-002-A1#5"
+      ],
+      "top_score": 0.1886,
+      "abstains": false,
+      "retrieval_ms": 0.28,
+      "hit": 1.0,
+      "recall": 0.36363636363636365,
+      "rr": 1.0,
+      "tenant_acc": 1.0
+    },
+    {
+      "id": "q039",
+      "question_type": "Q4",
+      "answerable": true,
+      "retrieved": [
+        "ABP-L-017#3",
+        "ABP-L-007#3",
+        "ABP-L-006#3",
+        "ABP-L-008#4",
+        "ABP-L-008#3"
+      ],
+      "top_score": 0.2472,
+      "abstains": false,
+      "retrieval_ms": 0.31,
+      "hit": 1.0,
+      "recall": 1.0,
+      "rr": 1.0,
+      "tenant_acc": 0.6
+    },
+    {
+      "id": "q040",
+      "question_type": "Q4",
+      "answerable": true,
+      "retrieved": [
+        "ABP-L-002-A1#4",
+        "ABP-L-004-A1#1",
+        "ABP-L-014#8",
+        "ABP-L-019#6",
+        "ABP-L-016#2"
+      ],
+      "top_score": 0.596,
+      "abstains": false,
+      "retrieval_ms": 0.27,
+      "hit": 1.0,
+      "recall": 0.5,
+      "rr": 1.0,
+      "tenant_acc": 0.8
+    },
+    {
+      "id": "q041",
+      "question_type": "Q4",
+      "answerable": true,
+      "retrieved": [
+        "ABP-L-010#14",
+        "ABP-L-012#14",
+        "ABP-L-020#14",
+        "ABP-L-007#16",
+        "ABP-L-008#16"
+      ],
+      "top_score": 0.2955,
+      "abstains": false,
+      "retrieval_ms": 0.3,
+      "hit": 0.0,
+      "recall": 0.0,
+      "rr": 0.0,
+      "tenant_acc": 0.0
+    },
+    {
+      "id": "q042",
+      "question_type": "Q4",
+      "answerable": true,
+      "retrieved": [
+        "ABP-L-011#13",
+        "ABP-L-001-A1#1",
+        "ABP-L-018#13",
+        "ABP-L-005#12",
+        "ABP-L-015#12"
+      ],
+      "top_score": 0.1751,
+      "abstains": false,
+      "retrieval_ms": 0.27,
+      "hit": 1.0,
+      "recall": 1.0,
+      "rr": 1.0,
+      "tenant_acc": 0.4
+    },
+    {
+      "id": "q043",
+      "question_type": "Q5",
+      "answerable": true,
+      "retrieved": [
+        "ABP-L-004#1",
+        "ABP-L-003#1",
+        "ABP-L-005#1",
+        "ABP-L-017#3",
+        "ABP-L-007#3"
+      ],
+      "top_score": 0.2397,
+      "abstains": false,
+      "retrieval_ms": 0.26,
+      "hit": 0.0,
+      "recall": 0.0,
+      "rr": 0.0,
+      "tenant_acc": 0.6
+    },
+    {
+      "id": "q044",
+      "question_type": "Q5",
+      "answerable": true,
+      "retrieved": [
+        "ABP-L-016#1",
+        "ABP-L-015#1",
+        "ABP-L-014#1",
+        "ABP-L-015-A1#1",
+        "ABP-L-013#1"
+      ],
+      "top_score": 0.3604,
+      "abstains": false,
+      "retrieval_ms": 0.29,
+      "hit": 1.0,
+      "recall": 1.0,
+      "rr": 1.0,
+      "tenant_acc": 1.0
+    },
+    {
+      "id": "q045",
+      "question_type": "Q5",
+      "answerable": true,
+      "retrieved": [
+        "ABP-L-019#12",
+        "ABP-L-020#12",
+        "ABP-L-017#14",
+        "ABP-L-018#14",
+        "ABP-L-020#1"
+      ],
+      "top_score": 0.2476,
+      "abstains": false,
+      "retrieval_ms": 0.27,
+      "hit": 0.0,
+      "recall": 0.0,
+      "rr": 0.0,
+      "tenant_acc": 1.0
+    },
+    {
+      "id": "q046",
+      "question_type": "Q5",
+      "answerable": true,
+      "retrieved": [
+        "ABP-L-010#1",
+        "ABP-L-009#1",
+        "ABP-L-012#1",
+        "ABP-L-008#1",
+        "ABP-L-011#1"
+      ],
+      "top_score": 0.2784,
+      "abstains": false,
+      "retrieval_ms": 0.27,
+      "hit": 0.0,
+      "recall": 0.0,
+      "rr": 0.0,
+      "tenant_acc": 0.6
+    },
+    {
+      "id": "q047",
+      "question_type": "Q5",
+      "answerable": true,
+      "retrieved": [
+        "ABP-L-002-A1#2",
+        "ABP-L-016#2",
+        "ABP-L-016#11",
+        "ABP-L-013#2",
+        "ABP-L-020#2"
+      ],
+      "top_score": 0.1715,
+      "abstains": false,
+      "retrieval_ms": 0.26,
+      "hit": 1.0,
+      "recall": 0.3,
+      "rr": 0.5,
+      "tenant_acc": 0.8
+    },
+    {
+      "id": "q048",
+      "question_type": "Q6",
+      "answerable": false,
+      "retrieved": [
+        "ABP-L-012#0",
+        "ABP-L-012#7",
+        "ABP-L-010#1",
+        "ABP-L-009#1",
+        "ABP-L-012#1"
+      ],
+      "top_score": 0.4236,
+      "abstains": false,
+      "retrieval_ms": 0.26
+    },
+    {
+      "id": "q049",
+      "question_type": "Q6",
+      "answerable": false,
+      "retrieved": [
+        "ABP-L-003#0",
+        "ABP-L-002#4",
+        "ABP-L-002-A1#3",
+        "ABP-L-001#4",
+        "ABP-L-002-A1#1"
+      ],
+      "top_score": 0.3998,
+      "abstains": false,
+      "retrieval_ms": 0.26
+    },
+    {
+      "id": "q050",
+      "question_type": "Q6",
+      "answerable": false,
+      "retrieved": [
+        "ABP-L-012#0",
+        "ABP-L-012#7",
+        "ABP-L-001-A1#1",
+        "ABP-L-018#8",
+        "ABP-L-014#7"
+      ],
+      "top_score": 0.4482,
+      "abstains": false,
+      "retrieval_ms": 0.26
+    },
+    {
+      "id": "q051",
+      "question_type": "Q6",
+      "answerable": false,
+      "retrieved": [
+        "ABP-L-001-A1#0",
+        "ABP-L-001#0",
+        "ABP-L-004#1",
+        "ABP-L-003#1",
+        "ABP-L-005#1"
+      ],
+      "top_score": 0.3421,
+      "abstains": false,
+      "retrieval_ms": 0.25
+    },
+    {
+      "id": "q052",
+      "question_type": "Q6",
+      "answerable": false,
+      "retrieved": [
+        "ABP-L-010#1",
+        "ABP-L-009#1",
+        "ABP-L-012#1",
+        "ABP-L-008#1",
+        "ABP-L-011#1"
+      ],
+      "top_score": 0.4263,
+      "abstains": false,
+      "retrieval_ms": 0.26
+    },
+    {
+      "id": "q053",
+      "question_type": "Q6",
+      "answerable": false,
+      "retrieved": [
+        "ABP-L-014#0",
+        "ABP-L-016#1",
+        "ABP-L-015#1",
+        "ABP-L-014#1",
+        "ABP-L-013#1"
+      ],
+      "top_score": 0.3697,
+      "abstains": false,
+      "retrieval_ms": 0.26
+    },
+    {
+      "id": "q054",
+      "question_type": "Q6",
+      "answerable": false,
+      "retrieved": [
+        "ABP-L-002#0",
+        "ABP-L-002-A1#0",
+        "ABP-L-002#7",
+        "ABP-L-001-A1#0",
+        "ABP-L-001-A1#1"
+      ],
+      "top_score": 0.4327,
+      "abstains": false,
+      "retrieval_ms": 0.26
+    },
+    {
+      "id": "q055",
+      "question_type": "Q6",
+      "answerable": false,
+      "retrieved": [
+        "ABP-L-017#0",
+        "ABP-L-008#13",
+        "ABP-L-017#8",
+        "ABP-L-013#12",
+        "ABP-L-002#6"
+      ],
+      "top_score": 0.2708,
+      "abstains": false,
+      "retrieval_ms": 0.26
+    }
+  ]
+}
