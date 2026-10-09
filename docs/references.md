@@ -38,3 +38,21 @@ reports what the lease says; it never judges whether a clause complies.
 - Rent quoted in **SGD per sq ft per month**; security deposit expressed in months of gross rent.
 - Retail rent often **base rent or a % of gross turnover (GTO), whichever is higher**.
 - **Fit-out** periods (rent-free) at start; **reinstatement** to original condition at lease end.
+
+## Planned iteration: Regulatory context (after MVP 4)
+
+Goal: show the relevant regulatory principle *next to* a lease clause (e.g. a retail lease's security
+deposit clause alongside the Code's principle on security deposits), without judging compliance.
+
+**Approach: versioned local snapshots, not live web search.** Live search would make evaluation
+non-reproducible, invite prompt injection from web content, and blur the "not legal advice" line.
+
+| Decision | Plan |
+|---|---|
+| Source registry | `data/regulatory/sources.yaml`: one entry per document with `source_id`, publisher, title, URL, version / effective date, `retrieved_on`, SHA-256 of the file |
+| Storage | Files kept outside git (`private/regulatory/`) until reuse terms are confirmed for each publisher; only the registry is committed |
+| Index | Separate collection from the leases, with its own citation style: `[Publisher · Title · version date · section]` |
+| Routing | The MVP 3 query router decides lease vs regulation vs both; lease answers never silently mix in regulatory text |
+| Updates | Re-download → diff against previous version → bump `retrieved_on` and hash → re-run eval → note in `docs/eval-notes/` |
+| Guardrails | Answers present the clause and the principle side by side; no "complies / does not comply" verdicts. Red-team cases added for "is this lease legal?" prompts |
+| Priority sources | Retail Code of Conduct (FTIC), Lease Agreements for Retail Premises Act 2023 and Regulations, IRAS stamp duty and GST guides. MAS Banking Regulations as lending context only |
