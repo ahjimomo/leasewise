@@ -28,6 +28,23 @@ def parse_document(path: Path) -> list[Clause]:
         raise ValueError(f"{path.name}: no tagged clause headings found")
 
     clauses = []
+    # Text above the first clause (title, parties, signing date) becomes clause "0".
+    preamble = "\n".join(
+        line
+        for line in body[: matches[0].start()].splitlines()
+        if line.strip() and not line.startswith(("# ", "*Fictional"))
+    ).strip()
+    if preamble:
+        clauses.append(
+            Clause(
+                doc=meta,
+                clause_id="0",
+                clause_title="Preamble",
+                clause_type=ClauseType.GENERAL,
+                text=preamble,
+            )
+        )
+
     for i, m in enumerate(matches):
         end = matches[i + 1].start() if i + 1 < len(matches) else len(body)
         attrs = dict(ATTR_RE.findall(m.group("attrs")))

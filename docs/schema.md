@@ -33,7 +33,7 @@ Clauses are level-2 markdown headings with a number, a title, and an attribute t
 ```
 
 `type` is required. `modifies` (amendments and side letters only) is a comma-separated list of clause ids
-in the `amends` document. Sub-clauses (7.1, 7.2) are numbered paragraphs inside the clause. Parser: [`src/corpus.py`](../src/corpus.py).
+in the `amends` document. Sub-clauses (7.1, 7.2) are numbered paragraphs inside the clause. Text above the first clause (parties, signing date) is kept as clause `0` ("Preamble"). Parser: [`src/corpus.py`](../src/corpus.py).
 Ingestion emits one chunk per clause, carrying all document fields plus:
 
 | Field | Notes |
