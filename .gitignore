@@ -6,9 +6,13 @@ __pycache__/
 .ruff_cache/
 *.egg-info/
 
-# Secrets
+# Secrets: any .env variant except the committed template
 .env
+.env.*
+!.env.example
 .streamlit/secrets.toml
+*.pem
+*.key
 
 # Build artefacts (index is rebuilt by src/ingest.py)
 index/
