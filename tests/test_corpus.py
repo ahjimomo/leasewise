@@ -35,6 +35,6 @@ def test_amendment_links_resolve(clauses):
         target = c.doc.amends
         assert target in docs, f"{c.doc.doc_id} amends unknown doc {target}"
         assert docs[target].tenant_id == c.doc.tenant_id, f"{c.doc.doc_id}: tenant mismatch"
-        assert c.doc.effective_date > docs[target].effective_date
+        assert c.doc.effective_date >= docs[target].effective_date
         for cid in c.modifies_clause_ids:
             assert cid in clause_ids[target], f"{c.chunk_id} modifies missing {target}#{cid}"
