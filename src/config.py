@@ -16,7 +16,7 @@ EVAL_DIR = ROOT / "eval"
 LANDLORD_NAME = "Atlas Bay Properties"
 # Fixed "today" for the synthetic portfolio, so date-relative answers and the golden set stay stable.
 AS_OF_DATE = date(2026, 10, 1)
-DISCLAIMER ="All properties, tenants, and leases are fictional. This is a demo, not legal advice."
+DISCLAIMER = "All properties, tenants, and leases are fictional. This is a demo, not legal advice."
 
 # LLM (OpenRouter)
 OPENROUTER_BASE_URL = "https://openrouter.ai/api/v1"
@@ -35,7 +35,7 @@ LLM_TIMEOUT_S = 60
 
 # Retrieval
 DEFAULT_K = 5
-RELEVANCE_THRESHOLD = 0.1  # tuned against the golden set
+RELEVANCE_THRESHOLD = 0.1  # filters off-topic input only; Q6 scores overlap answerable ones (see eval notes)
 
 
 def get_api_key() -> str | None:
