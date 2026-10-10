@@ -38,7 +38,7 @@ def main() -> None:
     except HTTPError as e:
         sys.exit(f"Key check failed: HTTP {e.code}. Check the key in .env.")
     print("Key OK.")
-    for field in ("label", "limit", "usage", "free_model_daily_requests"):
+    for field in ("limit", "usage", "free_model_daily_requests"):
         if field in info:
             print(f"  {field}: {info[field]}")
 

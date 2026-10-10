@@ -18,10 +18,18 @@ LANDLORD_NAME = "Atlas Bay Properties"
 AS_OF_DATE = date(2026, 10, 1)
 DISCLAIMER ="All properties, tenants, and leases are fictional. This is a demo, not legal advice."
 
-# LLM (OpenRouter). Default model is chosen from the current free list at build time.
+# LLM (OpenRouter)
 OPENROUTER_BASE_URL = "https://openrouter.ai/api/v1"
-DEFAULT_MODEL = os.getenv("LEASEWISE_MODEL", "")
-FALLBACK_MODELS = [m for m in os.getenv("LEASEWISE_FALLBACK_MODELS", "").split(",") if m]
+# Picked from the free list on 2026-10-10 (see docs/eval-notes/model-selection.md). Env vars override.
+DEFAULT_MODEL = os.getenv("LEASEWISE_MODEL", "nvidia/nemotron-3-super-120b-a12b:free")
+FALLBACK_MODELS = [
+    m
+    for m in os.getenv(
+        "LEASEWISE_FALLBACK_MODELS",
+        "dots-studio/dots-3-note-preview:free,google/gemma-4-31b-it:free,google/gemma-4-26b-a4b-it:free",
+    ).split(",")
+    if m
+]
 TEMPERATURE = 0.2
 LLM_TIMEOUT_S = 60
 
